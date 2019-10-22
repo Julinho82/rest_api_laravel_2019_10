@@ -15,6 +15,8 @@ class CreateModoPagosTable extends Migration
     {
         Schema::create('modo_pagos', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('nombre',100);
+            $table->string('otros_detalles',150);
             $table->timestamps();
         });
     }
