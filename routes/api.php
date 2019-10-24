@@ -37,6 +37,7 @@ Modo_pago
 */
 
 Route::get('modopagos','ModoPagoControler@getModoPagos');
+Route::get('modopagos/{id}','ModoPagoControler@getModoPagoId');
 
 
 

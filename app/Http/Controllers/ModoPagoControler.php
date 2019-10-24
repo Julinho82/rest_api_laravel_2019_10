@@ -21,6 +21,13 @@ class ModoPagoControler extends Controller
 
     //read by id
 
+    public function getModoPagoId($id){
+
+        $modoPagoId=ModoPago::find($id);
+
+        return response()->json($modoPagoId);
+    }
+
     //create
 
 
