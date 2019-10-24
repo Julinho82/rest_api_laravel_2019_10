@@ -23,3 +23,6 @@ Route::get('clientes','ClienteControler@getClientes');
 Route::get('categorias','CategoriaControler@getCategorias');
 
 
+Route::get('modopagos','ModoPagoControler@getModoPagos');
+
+
