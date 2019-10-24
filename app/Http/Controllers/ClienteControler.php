@@ -17,17 +17,18 @@ class ClienteControler extends Controller
 
     }
 
-  //create
 
-  
   //read by id
 
   public function getClientesById($id){
 
-    $clienteById = Cliente::findbyid($id);
+    $clienteById = Cliente::find($id);
 
     return response()->json($clienteById);;
   }
+
+  
+  //create
 
   //edit
 

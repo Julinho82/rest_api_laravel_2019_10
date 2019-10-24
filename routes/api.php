@@ -25,4 +25,6 @@ Route::get('categorias','CategoriaControler@getCategorias');
 
 Route::get('modopagos','ModoPagoControler@getModoPagos');
 
+Route::get('clientes/{id}','ClienteControler@getClientesById');
+
 
