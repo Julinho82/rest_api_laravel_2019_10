@@ -23,6 +23,13 @@ class CategoriaControler extends Controller
 
     //read by id
 
+    public function getCategoriaById($id){
+
+        $categoriaId=Categoria::find($id);
+
+        return \response()->json($categoriaId);
+    }
+
 
     //create
 

@@ -17,14 +17,27 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+/*
+cliente
+*/
 Route::get('clientes','ClienteControler@getClientes');
 
+Route::get('clientes/{id}','ClienteControler@getClientesById');
 
+/* 
+Categoria
+*/
 Route::get('categorias','CategoriaControler@getCategorias');
 
+Route::get('categorias/{id}','CategoriaControler@getCategoriaById');
+
+
+/*
+Modo_pago
+*/
 
 Route::get('modopagos','ModoPagoControler@getModoPagos');
 
-Route::get('clientes/{id}','ClienteControler@getClientesById');
+
 
 
